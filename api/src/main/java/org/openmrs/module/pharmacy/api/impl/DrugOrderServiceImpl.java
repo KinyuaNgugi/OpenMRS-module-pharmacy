@@ -3,9 +3,9 @@ package org.openmrs.module.pharmacy.api.impl;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.openmrs.DrugOrder;
 import org.openmrs.api.impl.BaseOpenmrsService;
 import org.openmrs.module.pharmacy.api.DrugOrderService;
-import org.openmrs.module.pharmacy.api.OtherModels.DrugOrder;
 import org.openmrs.module.pharmacy.api.db.DrugOrderDAO;
 
 import java.util.List;

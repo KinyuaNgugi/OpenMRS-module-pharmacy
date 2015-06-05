@@ -16,61 +16,83 @@ package org.openmrs.module.pharmacy;
 import org.openmrs.BaseOpenmrsMetadata;
 import org.openmrs.BaseOpenmrsObject;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.io.Serializable;
 import java.util.Set;
 
 /**
  * It is a model class. It should extend either {@link BaseOpenmrsObject} or {@link BaseOpenmrsMetadata}.
  */
+@Entity
+@Table(name = "pharamacy_myDrug")
 public class Pharmacy extends BaseOpenmrsObject implements Serializable {
 
-	private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
+
+    @Id
+    @Column(name = "myDrugId")
     private Integer id;
-    private String brandName;
-    private String genericName;
-    private String description;
-    private float pricePerUnit;
-    private Set<Pharmacy> myDrugs;
 
-    public Set<Pharmacy> getMyDrugs() {
-        return myDrugs;
-    }
+    @Id
+    @Column(name="brandName")
+	private String brandName;
 
-    public void setMyDrugs(Set<Pharmacy> myDrugs) {
-        this.myDrugs = myDrugs;
-    }
+    @Id
+    @Column(name="genericName")
+	private String genericName;
 
-    public float getPricePerUnit() {
-        return pricePerUnit;
-    }
+    @Id
+    @Column(name = "description")
+	private String description;
 
-    public void setPricePerUnit(float pricePerUnit) {
-        this.pricePerUnit = pricePerUnit;
-    }
+    @Id
+    @Column(name="pricePerUnit")
+	private float pricePerUnit;
 
-    public String getDescription() {
-        return description;
-    }
+	private Set<Pharmacy> myDrugs;
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
+	public Set<Pharmacy> getMyDrugs() {
+		return myDrugs;
+	}
 
-    public String getGenericName() {
-        return genericName;
-    }
+	public void setMyDrugs(Set<Pharmacy> myDrugs) {
+		this.myDrugs = myDrugs;
+	}
 
-    public void setGenericName(String genericName) {
-        this.genericName = genericName;
-    }
+	public float getPricePerUnit() {
+		return pricePerUnit;
+	}
 
-    public String getBrandName() {
-        return brandName;
-    }
+	public void setPricePerUnit(float pricePerUnit) {
+		this.pricePerUnit = pricePerUnit;
+	}
 
-    public void setBrandName(String brandName) {
-        this.brandName = brandName;
-    }
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public String getGenericName() {
+		return genericName;
+	}
+
+	public void setGenericName(String genericName) {
+		this.genericName = genericName;
+	}
+
+	public String getBrandName() {
+		return brandName;
+	}
+
+	public void setBrandName(String brandName) {
+		this.brandName = brandName;
+	}
 
 	@Override
 	public Integer getId() {
@@ -81,6 +103,4 @@ public class Pharmacy extends BaseOpenmrsObject implements Serializable {
 	public void setId(Integer id) {
 		this.id= id;
 	}
-
-
 }

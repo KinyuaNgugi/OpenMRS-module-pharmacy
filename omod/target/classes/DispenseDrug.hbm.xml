@@ -3,7 +3,7 @@
 		"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 		"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
 
-<hibernate-mapping package="org.openmrs.module.pharmacy.api.OtherModels">
+<hibernate-mapping package="org.openmrs.module.pharmacy">
 
 	<class name="DispenseDrug"
 		   table="pharmacy_myDispensedDrug">
@@ -14,8 +14,8 @@
 
 		<property name="patientID" type="java.lang.Integer" column="patient_id"/>
 		<property name="dateOfDispense" type="java.util.Date" column="dateOfDispense"/>
-
-		<!--<many-to-one name="drugId" class="org.openmrs.module.pharmacy.Pharmacy" fetch="select">
+<!--
+		<many-to-one name="drugId" class="Pharmacy" fetch="select">
 			<column name="myDrugId" not-null="true" />
 		</many-to-one>-->
 

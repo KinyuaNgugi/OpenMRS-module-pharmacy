@@ -1,7 +1,7 @@
 package org.openmrs.module.pharmacy.api;
 
 import org.openmrs.api.OpenmrsService;
-import org.openmrs.module.pharmacy.api.OtherModels.DispenseDrug;
+import org.openmrs.module.pharmacy.DispenseDrug;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;

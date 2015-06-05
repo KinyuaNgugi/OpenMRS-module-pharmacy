@@ -3,7 +3,7 @@ package org.openmrs.module.pharmacy.api.db.hibernate;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.hibernate.SessionFactory;
-import org.openmrs.module.pharmacy.api.OtherModels.PayDrug;
+import org.openmrs.module.pharmacy.PayDrug;
 import org.openmrs.module.pharmacy.api.db.PayDrugDAO;
 
 import java.util.List;

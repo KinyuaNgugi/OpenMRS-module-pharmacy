@@ -7,7 +7,7 @@
 	<name>${project.parent.name}</name>
 	<version>${project.parent.version}</version>
 	<package>${project.parent.groupId}.${project.parent.artifactId}</package>
-	<author>urandu</author>
+	<author>kinyua</author>
 	<description>
 		${project.parent.description}
 	</description>
@@ -17,7 +17,7 @@
 
 	
 	<!-- Module Activator -->
-	<activator>${project.parent.groupId}.${project.parent.artifactId}.PharmacyActivator</activator>
+	<activator>${project.parent.groupId}.${project.parent.artifactId}.pharmacyActivator</activator>
 	
 	
 	<!-- Adds link to admin page -->
@@ -27,11 +27,15 @@
 	</extension>
 	
 	<!-- Maps hibernate file's, if present -->
-	<mappingFiles>
+	<!--<mappingFiles>
 				
 		Pharmacy.hbm.xml
+
 				
-	</mappingFiles>
+	</mappingFiles>-->
+	<packagesWithMappedClasses>
+		org.openmrs.module.pharmacy
+	</packagesWithMappedClasses>
 
 	<!-- Internationalization -->
 	<!-- All message codes should start with ${project.parent.artifactId}. -->

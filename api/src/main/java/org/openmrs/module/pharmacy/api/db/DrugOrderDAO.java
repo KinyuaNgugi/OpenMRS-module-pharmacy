@@ -1,6 +1,6 @@
 package org.openmrs.module.pharmacy.api.db;
 
-import org.openmrs.module.pharmacy.api.OtherModels.DrugOrder;
+import org.openmrs.DrugOrder;
 
 import java.util.List;
 

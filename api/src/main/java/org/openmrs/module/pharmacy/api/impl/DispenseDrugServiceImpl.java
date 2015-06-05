@@ -3,8 +3,8 @@ package org.openmrs.module.pharmacy.api.impl;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.openmrs.api.impl.BaseOpenmrsService;
+import org.openmrs.module.pharmacy.DispenseDrug;
 import org.openmrs.module.pharmacy.api.DispenseDrugService;
-import org.openmrs.module.pharmacy.api.OtherModels.DispenseDrug;
 import org.openmrs.module.pharmacy.api.db.DispenseDrugDAO;
 
 import java.util.List;

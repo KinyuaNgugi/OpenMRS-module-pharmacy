@@ -1,6 +1,6 @@
 package org.openmrs.module.pharmacy.api;
 
-import org.openmrs.module.pharmacy.api.OtherModels.PayDrug;
+import org.openmrs.module.pharmacy.PayDrug;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;

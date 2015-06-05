@@ -2,7 +2,7 @@ package org.openmrs.module.pharmacy.api.impl;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.openmrs.module.pharmacy.api.OtherModels.PayDrug;
+import org.openmrs.module.pharmacy.PayDrug;
 import org.openmrs.module.pharmacy.api.PayDrugService;
 import org.openmrs.module.pharmacy.api.db.PayDrugDAO;
 

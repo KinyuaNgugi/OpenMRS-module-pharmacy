@@ -1,6 +1,6 @@
 package org.openmrs.module.pharmacy.api.db;
 
-import org.openmrs.module.pharmacy.api.OtherModels.ExpiredDrug;
+import org.openmrs.module.pharmacy.ExpiredDrug;
 
 import java.util.List;
 
